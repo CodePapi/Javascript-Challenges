@@ -1,0 +1,1 @@
+I officially commit to solve all Javascript related problems in this repo 
