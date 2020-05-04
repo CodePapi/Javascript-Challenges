@@ -1,0 +1,41 @@
+
+
+<body>
+<form>
+  
+   <input type="text" id="input">
+  <div id=""><button id="inputBtn" style="display: block;" disabled="true">Submit</button></div>
+  <button id="buttonBlock" style="display: none;">Submit</button>
+</form>
+
+<script>
+
+let input = document.getElementById('input')
+let buttonBlock = document.getElementById('buttonBlock')
+let inputBtn = document.getElementById('inputBtn')
+
+input.addEventListener("click", function(){
+  input.value.length<=0 &&
+    [inputBtn.style.display="block",
+  buttonBlock.style.display="none"]
+
+  input.value.length>0 &&[inputBtn.style.display="none",
+  buttonBlock.style.display="block"] 
+
+  })
+
+input.addEventListener("keyup", function(){
+  
+ input.value.length<=0?
+      setTimeout(()=>{
+        inputBtn.style.display="block"
+   buttonBlock.style.display="none"  
+   console.log( " keyup event was used")
+      }, 1000): [inputBtn.style.display="none",
+  buttonBlock.style.display="block"]
+    }
+)
+   
+
+</script>
+</body>
