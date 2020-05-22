@@ -1,0 +1,1 @@
+# This codes enables a frontend developer create a profile picure upload section without the need of a database or backend support
